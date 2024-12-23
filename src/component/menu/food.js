@@ -13,15 +13,15 @@ import { FaStar } from "react-icons/fa6";
 import './food.css'; 
 
 
-const imageMap = {
-  'logo.png': logo,
-  'pizza.jpg':pizza,
-  'burger.jpg':burger,
-  'chicken pizza.jpg':chickenpizza,
-  'chicken wings.jpg':wings,
-  'spring-rolls.jpg':springRolls,
-  'fries.jpeg':fries
-};
+// const imageMap = {
+//   'logo.png': logo,
+//   'pizza.jpg':pizza,
+//   'burger.jpg':burger,
+//   'chicken pizza.jpg':chickenpizza,
+//   'chicken wings.jpg':wings,
+//   'spring-rolls.jpg':springRolls,
+//   'fries.jpeg':fries
+// };
 
 const FoodItem = ({ food, onAddClick }) => {
   const dispatch = useDispatch();
@@ -43,9 +43,11 @@ const FoodItem = ({ food, onAddClick }) => {
 
 const categoryClass = food.category.toLowerCase();
 
+const imagePath = `${process.env.REACT_APP_API_BASE_URL}/assets/${food.img}`;
+
   return (
     <div className="food-item" key={food.id} onClick={handleClick}>
-      <img src={imageMap[food.img]} alt={food.name}></img>
+      <img src={imagePath} alt={food.name}></img>
       <h2>{food.name} </h2>
       <p><p className={`food-items ${categoryClass}`}><FaStar /></p>{food.ratings}</p>
       <p>${food.price ? parseFloat(String(food.price).replace('$', '')).toFixed(2) : '0.00'}</p>
