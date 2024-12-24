@@ -71,15 +71,16 @@ export default function Menu() {
     <div>
        <HelmetComponent
         title="Our Menu - Best Food Delivered to Your Door"
-  ogImage="https://foods-1.onrender.com/assets/pizza.jpg"
-        ogImageAlt="Delicious food banner"
-        ogImageWidth="1200"
-        ogImageHeight="630"
+        image = "https://foods-1.onrender.com/assets/pizza.jpg"
         description="Explore our delicious food menu, including vegetarian, non-vegetarian, and snacks. Order your favorite meals now!"
         keywords="menu, food, restaurant, order food online, delicious food, vegetarian food, non-vegetarian food, snacks" 
         ogTitle="Our Food Menu"
         ogDescription="Browse our wide selection of food items and order online. Fresh, tasty, and delivered to your door!"
-        ogUrl="http://192.168.0.107:3000"
+        ogUrl="https://foods-1.onrender.com/menu"
+        ogImage="https://foods-1.onrender.com/assets/pizza.jpg"
+        ogImageAlt="Delicious food banner"
+        ogImageWidth="300"
+        ogImageHeight="330"
         
       />
       
