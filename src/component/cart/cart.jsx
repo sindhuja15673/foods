@@ -14,7 +14,6 @@ import fries from '../../assets/fries.jpeg';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { loadStripe } from '@stripe/stripe-js'; // Load Stripe library
-import { Helmet } from 'react-helmet';
 import HelmetComponent from '../helmet/helmet';
 
 

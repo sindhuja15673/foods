@@ -20,7 +20,7 @@ export default function Menu() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/products');
+        const res = await axios.get('https://foods-6s5p.onrender.com/api/products');
         setFoodItems(res.data);
         setLoading(false); 
         const uniqueCategories = [...new Set(res.data.map(item => item.category))];
