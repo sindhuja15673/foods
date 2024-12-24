@@ -3,11 +3,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const HelmetComponent = ({ title, description, keywords, ogTitle, ogDescription, ogUrl, ogImage, ogImageAlt, ogImageWidth, ogImageHeight }) => {
+const HelmetComponent = ({ title, description, image, keywords, ogTitle, ogDescription, ogUrl, ogImage, ogImageAlt, ogImageWidth, ogImageHeight }) => {
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="image" content={image} ogImageWidth={1200} ogImageHeight={630} />
       <meta name="keywords" content={keywords} />
       <meta property="og:title" content={ogTitle} />
       <meta property="og:description" content={ogDescription} />
