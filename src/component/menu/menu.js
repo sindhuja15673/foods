@@ -76,10 +76,10 @@ export default function Menu() {
         ogTitle="Our Food Menu"
         ogDescription="Browse our wide selection of food items and order online. Fresh, tasty, and delivered to your door!"
         ogUrl="http://192.168.0.107:3000"
-        ogImage="http://192.168.0.107:3000/assets/logo.png"
+        ogImage="https://foods-1.onrender.com/assets/pizza.jpg"
         ogImageAlt="Delicious food banner"
-        ogImageWidth="300"
-        ogImageHeight="200"
+        ogImageWidth="1200"
+        ogImageHeight="630"
       />
       
       {showPopup && (
