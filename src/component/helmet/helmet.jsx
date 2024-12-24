@@ -23,11 +23,10 @@
 
 // export default HelmetComponent;
 // src/components/SEOHelmet.js
-
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const SEOHelmet = ({ title, description, keywords, ogTitle, ogDescription, ogUrl, ogImage, ogImageAlt, ogImageWidth, ogImageHeight }) => {
+const SEOHelmet = ({ title, description, keywords, ogTitle, ogDescription, ogUrl, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, jsonLd }) => {
   return (
     <Helmet>
       <title>{title}</title>
@@ -42,7 +41,7 @@ const SEOHelmet = ({ title, description, keywords, ogTitle, ogDescription, ogUrl
       <meta property='og:image:width' content={ogImageWidth} />
       <meta property='og:image:height' content={ogImageHeight} />
       <script type="application/ld+json">
-        {JSON.stringify(generateJsonLd())}
+        {JSON.stringify(jsonLd)}
       </script>
     </Helmet>
   );
