@@ -71,7 +71,6 @@ export default function Menu() {
     <div>
        <HelmetComponent
         title="Our Menu - Best Food Delivered to Your Door"
-        image = "https://foods-1.onrender.com/assets/pizza.jpg"
         description="Explore our delicious food menu, including vegetarian, non-vegetarian, and snacks. Order your favorite meals now!"
         keywords="menu, food, restaurant, order food online, delicious food, vegetarian food, non-vegetarian food, snacks" 
         ogTitle="Our Food Menu"
