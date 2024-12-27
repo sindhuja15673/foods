@@ -78,7 +78,7 @@ export default function Menu() {
         keywords="menu, food, restaurant, order food online, delicious food, vegetarian food, non-vegetarian food, snacks" 
         ogTitle="Our Food Menu"
         ogDescription="Browse our wide selection of food items and order online. Fresh, tasty, and delivered to your door!"
-        ogUrl="http://192.168.0.107:3000"
+        ogUrl="https://foods-1.onrender.com/"
         
         ogImageHeight="630"
       />
