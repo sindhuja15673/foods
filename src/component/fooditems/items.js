@@ -18,7 +18,7 @@ export default function Items() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('https://foods-6s5p.onrender.com/api/products');
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/products`);
         setFoodItems(res.data);
         setLoading(false);  
       } catch (error) {

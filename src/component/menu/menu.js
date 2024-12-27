@@ -7,6 +7,8 @@ import Popup from './popup';
 import SkeletonLoading from '../skeletonLoader';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
+import { Helmet } from 'react-helmet';
+import HelmetComponent from '../helmet/helmet';
 
 export default function Menu() {
   const [foodItems, setFoodItems] = useState([]);
@@ -18,7 +20,7 @@ export default function Menu() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/products');
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/products`);
         setFoodItems(res.data);
         setLoading(false); 
         const uniqueCategories = [...new Set(res.data.map(item => item.category))];
@@ -67,7 +69,18 @@ export default function Menu() {
   };
   return (
     <div>
-       
+       <HelmetComponent
+        title="Our Menu - Best Food Delivered to Your Door"
+        description="Explore our delicious food menu, including vegetarian, non-vegetarian, and snacks. Order your favorite meals now!"
+        keywords="menu, food, restaurant, order food online, delicious food, vegetarian food, non-vegetarian food, snacks" 
+        ogTitle="Our Food Menu"
+        ogDescription="Browse our wide selection of food items and order online. Fresh, tasty, and delivered to your door!"
+        ogUrl="https://foods-1.onrender.com/menu"
+        ogImage="https://foods-1.onrender.com/assets/pizza.jpg"
+        ogImageAlt="Delicious food banner"
+        ogImageWidth="1200"
+        ogImageHeight="630"
+      />
       
       {showPopup && (
         <Popup
