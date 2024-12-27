@@ -14,7 +14,7 @@ import fries from '../../assets/fries.jpeg';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { loadStripe } from '@stripe/stripe-js'; // Load Stripe library
-import HelmetComponent from '../helmet/helmet';
+
 
 
 const imageMap = {
@@ -146,19 +146,7 @@ const handleCheckout = async () => {
   return (
     <div className='cart-page'>
 
-<HelmetComponent
-        title="Shopping Cart"
-        description="Review and manage your cart items before proceeding to checkout."
-        keywords="shopping cart, food, e-commerce, checkout, products"
-        ogTitle="Shopping Cart"
-        ogDescription="Review and manage your cart items before proceeding to checkout."
-        ogUrl="http://192.168.0.107:3000/cart"
-        // ogImage="http://192.168.0.107:3000/assets/logo.png"
-        ogImageAlt="Delicious food banner"
-        ogImageWidth="300"
-        ogImageHeight="200"
-      />
-     
+
      <div className='cart-items'>
        {isLoading ? (
           <div className='cart-skeleton'>
