@@ -153,7 +153,7 @@ const handleCheckout = async () => {
         ogTitle="Shopping Cart"
         ogDescription="Review and manage your cart items before proceeding to checkout."
         ogUrl="http://192.168.0.107:3000/cart"
-        ogImage="http://192.168.0.107:3000/assets/logo.png"
+        // ogImage="http://192.168.0.107:3000/assets/logo.png"
         ogImageAlt="Delicious food banner"
         ogImageWidth="300"
         ogImageHeight="200"
