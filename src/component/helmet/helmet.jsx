@@ -13,7 +13,7 @@ const HelmetComponent = ({ title, description, keywords, ogTitle, ogDescription,
       <meta property="og:description" content={ogDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={ogUrl} />
-      <meta property="og:image" content='https://foods-1.onrender.com/assets/pizza.jpg' />
+      <meta property="og:image" content={ogImage} />
       <meta property="og:image:alt" content={ogImageAlt} />
       <meta property='og:image:width' content={ogImageWidth} />
       <meta property='og:image:height' content={ogImageHeight} />
