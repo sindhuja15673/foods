@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div>
       <HelmetComponent
-        title="Welcome to our Restaurant - Best Place to Order Food Online"
+        title="Best Place to Order Food Online"
         description="Explore our wide variety of delicious food items available for online ordering. Get your favorite meals delivered to your doorstep!"
         keywords="restaurant, food delivery, online ordering, best food, order food online"
         ogTitle="Best Place to Order Food Online"
