@@ -212,7 +212,8 @@ export default function Menu() {
         ogImageWidth="1200"
         ogImageHeight="630"
       />
-
+      <h1>Our Food Menu</h1>
+      <p>Browse our wide selection of food items and order online. Fresh, tasty, and delivered to your door!</p>
       {showPopup && (
         <Popup
           food={selectedFood}
