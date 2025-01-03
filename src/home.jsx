@@ -7,9 +7,9 @@ export default function home() {
   return (
     <div>
  <Helmet>
-      <title>this is home page</title>
+      <title>home page</title>
       <meta name="description" content='home page'/>
-      <meta property="og:title" content='home page' />
+      <meta property="og:title" content='this is home page' />
       <meta property="og:description" content='home page' />
       <meta property="og:image" content="https://res.cloudinary.com/dhevjlnnc/image/upload/v1735892233/dosa1_cvbvnr.jpg" />
       <meta property="og:url" content="https://foods-1.onrender.com" />
