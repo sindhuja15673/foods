@@ -9,9 +9,14 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/baner-img.png",
+      "src": "/logo.png",
       "sizes": "192x192",
       "type": "assets/png"
+    },
+    {
+      "src": "/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
