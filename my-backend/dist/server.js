@@ -10,7 +10,7 @@ const app = express();
 // Connect to database
 connectDB();
 app.use(cors({
-  origin: process.env.FRONTEND_URL && 'http://localhost:3000/',
+  origin: process.env.FRONTEND_URL && 'http://localhost:3000',
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true // Allow credentials (cookies, authorization headers)
 }));
