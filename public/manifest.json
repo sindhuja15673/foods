@@ -8,11 +8,10 @@
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
-    
     {
-      "src": "/logo512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/baner-img.png",
+      "sizes": "192x192",
+      "type": "assets/png"
     }
   ]
 }
